@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.1.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="官网 推荐的是    IDE 语言    Android Studio Kotlin&#x2F;Java   Flutter v&#x2F;s Native: Will Flutter Replace Native Android App Development?We’ll compare Flutter and native Android development on the basis of 5 criteri">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android Development">
+<meta property="og:url" content="http://example.com/2021/09/08/Android-Development/index.html">
+<meta property="og:site_name" content="学味屋">
+<meta property="og:description" content="官网 推荐的是    IDE 语言    Android Studio Kotlin&#x2F;Java   Flutter v&#x2F;s Native: Will Flutter Replace Native Android App Development?We’ll compare Flutter and native Android development on the basis of 5 criteri">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-09-08T08:15:37.000Z">
+<meta property="article:modified_time" content="2021-09-08T08:32:40.838Z">
+<meta property="article:author" content="玄月">
+<meta property="article:tag" content="key, word, s">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2021/09/08/Android-Development/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Android Development | 学味屋</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">学味屋</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">副标题广告位</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/09/08/Android-Development/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="玄月">
+      <meta itemprop="description" content="描述广告位">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="学味屋">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Android Development
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-09-08 01:15:37 / 修改时间：01:32:40" itemprop="dateCreated datePublished" datetime="2021-09-08T01:15:37-07:00">2021-09-08</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><a target="_blank" rel="noopener" href="https://developer.android.com/guide?hl=zh-cn">官网</a> 推荐的是</p>
+<table>
+<thead>
+<tr>
+<th>IDE</th>
+<th>语言</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Android Studio</td>
+<td>Kotlin/Java</td>
+</tr>
+</tbody></table>
+<h2 id="Flutter-v-s-Native-Will-Flutter-Replace-Native-Android-App-Development"><a href="#Flutter-v-s-Native-Will-Flutter-Replace-Native-Android-App-Development" class="headerlink" title="Flutter v/s Native: Will Flutter Replace Native Android App Development?"></a><a target="_blank" rel="noopener" href="https://www.innofied.com/will-flutter-replace-native-android-app-development/">Flutter v/s Native: Will Flutter Replace Native Android App Development?</a></h2><p>We’ll compare Flutter and native Android development on the basis of 5 criteria:</p>
+<h3 id="Technical-Architecture"><a href="#Technical-Architecture" class="headerlink" title="Technical Architecture"></a>Technical Architecture</h3><p>The tech stacks used for Google Flutter and Native Android development are different. Both the platforms have completely different architecture.<br>While Dart is the programming language of Flutter, Java or Kotlin is the language for native Android development. </p>
+<p>Flutter provides you with more Integrated Development Environment (IDE) options. </p>
+<p>Native Android app development uses just Android Studio as the IDE.<br>However, in addition to Android Studio, Flutter enables you to use many other lightweight editors such as VIM, Atom, and Sublime Text. </p>
+<p>You can create Flutter apps in an IDE such as IntelliJ Idea. </p>
+<p>The apps created on native Android are slick and fast. This is because they are created natively with the help of either Kotlin or Java language. </p>
+<p>The guide of native Android Developers explains the Android app development’s entire ecosystem. </p>
+<p>The GitHub Wiki clearly explains the Flutter engine’s architecture. However, to explain it in short, everything that you need for developing a native app, you will find in the Flutter engine itself. </p>
+<h3 id="Productivity-of-Developers"><a href="#Productivity-of-Developers" class="headerlink" title="Productivity of Developers"></a>Productivity of Developers</h3><p>Android engineers use Android Studio, native build, and Android Studio’s platform tools for developing apps natively. A slow process is involved whenever an app developer makes any change and wants to see the desired result. You may have to use an Android Virtual device or emulator for viewing the changes done by you while building the app. The process is slow because it can take a lot of time for Gradle builds. </p>
+<p>This slow process experienced by the Android developers has been done away with in Flutter app development. Google has incorporated a feature called “hot reload”, which helps developers to instantly view the effect of changes made in the app. However, this feature may not remain as effective when the app you have created grows in size. Therefore, <a target="_blank" rel="noopener" href="https://www.innofied.com/android-app-development-services-startup-guide/">developers must adopt new techniques</a> for effectively using this feature. </p>
+<p>Gradle handles the dependency management for native Android applications. You’ll find loads of Kotlin and Java packages in the market. Android ecosystem is efficient enough to handle these packages effectively. The Pub Package manager built within the Flutter apps, helps you get new dependencies for development. </p>
+<p>When it comes to the programming language, native Android development is ahead of Flutter, thus indicating that in the war of Flutter v/s Native, Native is the clear winner. </p>
+<ul>
+<li>Dart is a relatively new language in comparison to Java, the language used to develop apps in the Native Android ecosystem. While Dart was released in 2011, Java in 1991. Dart is still evolving and therefore lacks support for many text editors and IDEs. As a developer, you have to scale a steep learning curve to learn the new language. </li>
+<li>Native languages such as Kotlin and Java are more friendly with Android Studio. While Kotlin is a type-safe language, Java is there for a long period of time. That’s why you will get lots of community support for these native languages. </li>
+</ul>
+<h3 id="UI-Components"><a href="#UI-Components" class="headerlink" title="UI Components"></a>UI Components</h3><h4 id="Native-Android"><a href="#Native-Android" class="headerlink" title="Native Android"></a>Native Android</h4><p>A lot of time is given by the front-end developers in designing the User Interface. To build UI, Google has provided lots of components for native app development. They are not only powerful but also well documented. </p>
+<p>You, as an app developer, can also use Android Studio’s interface builder to build the UI faster by using the tools of native development. You’ll find all relevant basic information for building elements of UI in the Android UI docs. </p>
+<h4 id="Flutter"><a href="#Flutter" class="headerlink" title="Flutter"></a>Flutter</h4><p>The Flutter UI engine works differently. It is the rendering engine and frameworks that run Flutter apps. Complex UIs can be built by using the concept of widgets on Flutter. </p>
+<p>The Flutter user interface includes a tree of all kinds of widgets (be in the stateful or stateless widget). You can check the catalog for building complex UIs that support Cupertino for iOS, on one hand, and Material Components for Android, on the other. Both the layout and widgets at Flutter app development are pixel perfect.</p>
+<h3 id="Testing-Support"><a href="#Testing-Support" class="headerlink" title="Testing Support"></a>Testing Support</h3><h4 id="Native-Android-1"><a href="#Native-Android-1" class="headerlink" title="Native Android"></a>Native Android</h4><p>You’ll get amazing testing support for native Android tools. As an app developer, you can test native apps easily. You can do it either from Android Studio or by using Gradle from the command line. Whether it is unit, integration, instrumented, and tests for the user interface, you can add them for Android applications. </p>
+<p>For lower-level testing, you’ll get frameworks of both Java and Kotlin for lower-level testing. The Espresso framework supports UI testing. You can use the Mockito framework for mocking things and you’ll get lots of painless support in the process. </p>
+<h4 id="Flutter-1"><a href="#Flutter-1" class="headerlink" title="Flutter"></a>Flutter</h4><p>You can write tests at the unit, functional, and User Interface level, thanks to the solid testing framework provided by Google Flutter. </p>
+<p>It provides you with a cool feature called Widget Testing. It helps you to run tests for the user interface as fast as unit tests. Flutter provides you with detailed documentation, which makes it easier for you to know how it is possible to test apps with the help of Flutter. </p>
+<p>The integration tests at Flutter are very similar to that of Xcode UI tests. They go through the user interface for performing specific operations. The best thing about Flutter integration tests is that they run in a separate process. You can run them on:</p>
+<ul>
+<li>Simulators</li>
+<li>Emulators</li>
+<li>Real Devices</li>
+</ul>
+<p>To drive these tests, Flutter provides you with a Flutter Driver. It provides you with a separate package. </p>
+<h3 id="CI-CD-Support"><a href="#CI-CD-Support" class="headerlink" title="CI/CD Support"></a>CI/CD Support</h3><h4 id="Native-Android-2"><a href="#Native-Android-2" class="headerlink" title="Native Android"></a>Native Android</h4><p>One of the greatest aspects of Android apps is that it helps you in faster and continuous building and delivery practices. </p>
+<p>However, when it comes to the native Android app’s building and publishing process outside the Integrated Development Environment, it is a bit complex. Though there is strong support for automation building, automation testing, and Android Studio publishing at native Android apps, no dedicated CI/CD platform is provided for Android by Google. </p>
+<p>The app developers of native Android have to rely on 3rd party CI servers such as TeamCity and Jenkins or mobile CI services such as Nevercode, Circle CI, Travis CI, and many more. As you can develop native Android apps on Linux, it becomes easier on Android to manage the CI/CD aspects in comparison to iOS applications. </p>
+<h4 id="Flutter-2"><a href="#Flutter-2" class="headerlink" title="Flutter"></a>Flutter</h4><p>The team of Flutter at Google has entered into a partnership with Nevercode. This partnership has helped them provide their app developers with a Codemagic CI/CD solution. It is a painless solution for automatically detecting, building, testing, and packaging the Flutter application with zero configuration. You can build, test, and deploy Flutter apps to the Play Store easily with Codemagic. </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/09/07/Create-the-Blog/" rel="prev" title="Create the Blog">
+      <i class="fa fa-chevron-left"></i> Create the Blog
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Flutter-v-s-Native-Will-Flutter-Replace-Native-Android-App-Development"><span class="nav-number">1.</span> <span class="nav-text">Flutter v&#x2F;s Native: Will Flutter Replace Native Android App Development?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Technical-Architecture"><span class="nav-number">1.1.</span> <span class="nav-text">Technical Architecture</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Productivity-of-Developers"><span class="nav-number">1.2.</span> <span class="nav-text">Productivity of Developers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#UI-Components"><span class="nav-number">1.3.</span> <span class="nav-text">UI Components</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Native-Android"><span class="nav-number">1.3.1.</span> <span class="nav-text">Native Android</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Flutter"><span class="nav-number">1.3.2.</span> <span class="nav-text">Flutter</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Testing-Support"><span class="nav-number">1.4.</span> <span class="nav-text">Testing Support</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Native-Android-1"><span class="nav-number">1.4.1.</span> <span class="nav-text">Native Android</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Flutter-1"><span class="nav-number">1.4.2.</span> <span class="nav-text">Flutter</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CI-CD-Support"><span class="nav-number">1.5.</span> <span class="nav-text">CI&#x2F;CD Support</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Native-Android-2"><span class="nav-number">1.5.1.</span> <span class="nav-text">Native Android</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Flutter-2"><span class="nav-number">1.5.2.</span> <span class="nav-text">Flutter</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">玄月</p>
+  <div class="site-description" itemprop="description">描述广告位</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">玄月</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
